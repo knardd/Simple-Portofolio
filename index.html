@@ -6,39 +6,40 @@
     <title>Portofolio & Dokumentasi</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- Navigation -->
     <nav class="navbar">
       <div class="container">
         <div class="logo">Knardd</div>
-        <ul class="flex items-center gap-6 md:gap-8">
+        <ul class="flex items-center gap-6 md:gap-6">
           <li>
             <a
               href="#home"
-              class="text-white hover:text-purple-400 transition-colors duration-300"
+              class="text-white hover:text-purple-400 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-purple-500/20 hover:shadow-lg hover:shadow-purple-500/50 hover:scale-110 inline-block"
               >Home</a
             >
           </li>
           <li>
             <a
               href="#about"
-              class="text-white hover:text-purple-400 transition-colors duration-300"
+              class="text-white hover:text-purple-400 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-purple-500/20 hover:shadow-lg hover:shadow-purple-500/50 hover:scale-110 inline-block"
               >About</a
             >
           </li>
-          <!-- <li><a href="#portfolio" class="text-white hover:text-purple-400 transition-colors duration-300">Portofolio</a></li> -->
+          <!-- <li><a href="#portfolio" class="text-white hover:text-purple-400 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-purple-500/20 hover:shadow-lg hover:shadow-purple-500/50 hover:scale-110 inline-block">Portofolio</a></li> -->
           <li>
             <a
               href="#documentation"
-              class="text-white hover:text-purple-400 transition-colors duration-300"
+              class="text-white hover:text-purple-400 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-purple-500/20 hover:shadow-lg hover:shadow-purple-500/50 hover:scale-110 inline-block"
               >Documentation</a
             >
           </li>
           <li>
             <a
               href="#contact"
-              class="text-white hover:text-purple-400 transition-colors duration-300"
+              class="text-white hover:text-purple-400 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-purple-500/20 hover:shadow-lg hover:shadow-purple-500/50 hover:scale-110 inline-block"
               >Contact</a
             >
           </li>
@@ -52,16 +53,19 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero flex items-center justify-between">
-      <div class="w-1/2 flex flex-col justify-center">
-        <div class="container">
-          <h1 class="hero-title">Selamat Datang di Portofolio Saya</h1>
-          <p class="hero-subtitle">Junior Backend Developer | Problem Solver</p>
-        </div>
+    <section
+      id="home"
+      class="hero flex flex-col md:flex-row items-center justify-between"
+    >
+      <div class="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-8">
+        <h1 class="hero-title">Selamat Datang di Portofolio Saya</h1>
+        <p class="hero-subtitle">Junior Backend Developer | Problem Solver</p>
       </div>
-      <div class="w-1/2 flex items-center justify-center">
+      <div
+        class="w-full md:w-1/2 flex items-center justify-center px-4 md:px-8"
+      >
         <img
-          class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-4 border-purple-500/30"
+          class="w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-4 border-purple-500/30"
           src="/picture/download (1).jpeg"
           alt="Profile Picture"
         />
@@ -72,165 +76,218 @@
     <section id="about" class="about flex">
       <div class="container">
         <h2 class="section-title">About Me</h2>
-        <div class="w-1/2">
+        <div class="w-full md:w-3/4 mx-auto">
           <div class="about-content">
             <div class="about-text">
-              <p>
+              <p class="text-sm md:text-base">
                 Halo! Saya Shafwan Kennard Kumara, seorang siswa di SMK Negeri 9
                 Surakarta. Saya suka mempelajari hal-hal baru terutama yang
                 berkaitan dengan teknologi
               </p>
-              <p>
+              <p class="text-sm md:text-base">
                 Dengan pengalaman di berbagai teknologi web, saya selalu
                 berusaha untuk terus belajar dan berkembang.
               </p>
-              <div class="skills">
-                <span class="skill-tag"
+              <div class="flex flex-wrap justify-center gap-3 md:gap-5">
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden transition-all shrink-0 hover:scale-125 duration-300"
                   ><img
-                    class="w-12 h-12 object-cover rounded-lg"
+                    class="w-full h-full object-cover"
                     src="/picture/download.png"
-                    alt=""
+                    alt="HTML"
                 /></span>
-                <span class="skill-tag"
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden transition-all shrink-0 hover:scale-125 duration-300"
                   ><img
-                    class="w-12 h-12 object-cover rounded-lg"
+                    class="w-full h-full object-cover"
                     src="/picture/download (1).png"
-                    alt=""
+                    alt="CSS"
                 /></span>
-                <span class="skill-tag"
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden transition-all shrink-0 hover:scale-125 duration-300"
                   ><img
-                    class="w-12 h-12 object-cover rounded-lg"
+                    class="w-full h-full object-cover"
                     src="/picture/download (2).png"
-                    alt=""
+                    alt="JavaScript"
                 /></span>
-                <span class="skill-tag"
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden transition-all shrink-0 hover:scale-125 duration-300"
                   ><img
-                    class="w-12 h-12 object-cover rounded-lg"
+                    class="w-full h-full object-cover"
                     src="/picture/download (3).png"
-                    alt=""
+                    alt="PHP"
                 /></span>
-                <span class="skill-tag"
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden transition-all shrink-0 hover:scale-125 duration-300"
                   ><img
-                    class="w-12 h-12 object-cover rounded-lg"
+                    class="w-full h-full object-cover"
                     src="/picture/how-tailwind-css-help-reduce-workload-by-jefrydco.833f9b8.jpg"
-                    alt=""
+                    alt="Tailwind"
                 /></span>
-                <span class="skill-tag"
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden transition-all shrink-0 hover:scale-125 duration-300"
                   ><img
-                    class="w-12 h-12 object-cover rounded-lg"
+                    class="w-full h-full object-cover"
                     src="/picture/laravel-logowine-677e34f3ed94c-scaled.jpg"
-                    alt=""
+                    alt="Laravel"
                 /></span>
               </div>
             </div>
           </div>
         </div>
-        <div class="w-1/2"></div>
       </div>
     </section>
-
-    <!-- Portfolio Section -->
-    <!-- <section id="portfolio" class="portfolio">
-      <div class="container">
-        <h2 class="section-title">Portofolio</h2>
-        <div class="portfolio-grid">
-          <div class="portfolio-item">
-            <div class="portfolio-image">
-              <img src="https://via.placeholder.com/400x300" alt="Project 1" />
-            </div>
-            <div class="portfolio-info">
-              <h3>Proyek Website E-Commerce</h3>
-              <p>Platform e-commerce modern dengan fitur lengkap</p>
-              <div class="portfolio-tags">
-                <span>React</span>
-                <span>Node.js</span>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-image">
-              <img src="https://via.placeholder.com/400x300" alt="Project 2" />
-            </div>
-            <div class="portfolio-info">
-              <h3>Dashboard Analytics</h3>
-              <p>Dashboard interaktif untuk visualisasi data</p>
-              <div class="portfolio-tags">
-                <span>JavaScript</span>
-                <span>Chart.js</span>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-image">
-              <img src="https://via.placeholder.com/400x300" alt="Project 3" />
-            </div>
-            <div class="portfolio-info">
-              <h3>Mobile App Design</h3>
-              <p>Design UI/UX untuk aplikasi mobile</p>
-              <div class="portfolio-tags">
-                <span>UI/UX</span>
-                <span>Figma</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <!-- Documentation Section -->
-    <section id="documentation" class="documentation">
-      <div class="container">
-        <h2 class="section-title">Dokumentasi</h2>
-        <div class="doc-grid">
-          <div class="doc-card">
-            <h3>📚 Tutorial & Guides</h3>
-            <p>Kumpulan tutorial dan panduan pengembangan web</p>
-            <a href="documents/Laporan Web Proxy.pdf" class="doc-link"
-              >Lihat PDF →</a
-            >
+    <section id="documentation" class="px-4 md:px-0 py-20">
+      <div class="container mx-auto">
+        <h2 class="section-title text-2xl md:text-3xl lg:text-4xl">
+          Documentation
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <div
+            class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 hover:bg-white/20 hover:border-white/40 hover:scale-105 shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-lg md:text-xl font-bold text-cyan-400 mb-3">
+                Konfigurasi Dasar Mikrotik
+              </h3>
+              <p class="text-sm md:text-base text-gray-300">
+                Konfigurasi Dasar Mikrotik Menggunakan Winbox
+              </p>
+            </div>
           </div>
-          <div class="doc-card">
-            <h3>💻 Code Snippets</h3>
-            <p>Kode-kode berguna yang sering digunakan</p>
-            <a href="#" class="doc-link">Lihat Snippets →</a>
+          <div
+            class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 hover:bg-white/20 hover:border-white/40 hover:scale-105 shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-lg md:text-xl font-bold text-cyan-400 mb-3">
+                Setting Omnitik Dan LHG
+              </h3>
+              <p class="text-sm md:text-base text-gray-300">
+                Konfigurasi Omnitik Dan LHG Menggunakan Winbox
+              </p>
+            </div>
           </div>
-          <div class="doc-card">
-            <h3>📝 Blog & Articles</h3>
-            <p>Artikel dan catatan tentang pengalaman development</p>
-            <a href="#" class="doc-link">Baca Artikel →</a>
-          </div>
-          <div class="doc-card">
-            <h3>🛠️ Tools & Resources</h3>
-            <p>Daftar tools dan resources yang direkomendasikan</p>
-            <a href="#" class="doc-link">Lihat Resources →</a>
+          <!-- <div
+            class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 hover:bg-white/20 hover:border-white/40 hover:scale-105 shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-lg md:text-xl font-bold text-cyan-400 mb-3">
+                📝 Blog & Articles
+              </h3>
+              <p class="text-sm md:text-base text-gray-300">
+                Artikel dan catatan tentang pengalaman development
+              </p>
+            </div>
+          </div> -->
+          <!-- <div
+            class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 hover:bg-white/20 hover:border-white/40 hover:scale-105 shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-lg md:text-xl font-bold text-cyan-400 mb-3">
+                🛠️ Tools & Resources
+              </h3>
+              <p class="text-sm md:text-base text-gray-300">
+                Daftar tools dan resources yang direkomendasikan
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="px-4 md:px-0 py-20">
+      <div class="container mx-auto">
+        <h2 class="section-title text-2xl md:text-3xl lg:text-4xl mb-12">
+          Certificate
+        </h2>
+
+        <!-- Certificates Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Certificate 1 -->
+          <div class="group overflow-hidden rounded-xl">
+            <div class="relative overflow-hidden rounded-xl bg-gray-900">
+              <img
+                src="/picture/Sertifikat.jpg"
+                alt="Certificate"
+                class="w-full h-64 object-cover cursor-pointer transition-transform duration-300 group-hover:scale-110 certificate-thumbnail"
+                data-full-src="/picture/Sertifikat.jpg"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Modal untuk Sertifikat Besar -->
+    <div id="certificateModal" class="certificate-modal">
+      <div class="modal-overlay" id="modalOverlay"></div>
+      <div class="modal-content">
+        <button id="closeModal" class="close-btn">&times;</button>
+        <img id="modalImage" src="" alt="Sertifikat" class="modal-image" />
+      </div>
+    </div>
+
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Hubungi Saya</h2>
-        <div class="contact-content">
-          <form class="contact-form">
-            <input type="text" placeholder="Nama" required />
-            <input type="email" placeholder="Email" required />
-            <textarea placeholder="Pesan" rows="5" required></textarea>
-            <button type="submit" class="btn">Kirim Pesan</button>
+    <section id="contact" class="contact px-4 md:px-0">
+      <div class="container mx-auto">
+        <h2 class="section-title text-2xl md:text-3xl lg:text-4xl">Contact</h2>
+        <div
+          class="contact-content grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12"
+        >
+          <form class="contact-form" id="contactForm">
+            <input
+              type="text"
+              name="name"
+              placeholder="Nama"
+              required
+              class="w-full text-sm md:text-base"
+            />
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="emailInput"
+                placeholder="Email"
+                required
+                class="w-full text-sm md:text-base"
+              />
+              <span
+                id="emailError"
+                class="text-red-500 text-xs mt-1"
+                style="display: none"
+              ></span>
+            </div>
+            <textarea
+              name="message"
+              placeholder="Pesan"
+              rows="5"
+              required
+              class="w-full text-sm md:text-base"
+            ></textarea>
+            <button
+              type="submit"
+              class="btn w-full md:w-auto text-sm md:text-base"
+            >
+              Kirim Pesan
+            </button>
           </form>
           <div class="contact-info">
             <div class="contact-item">
-              <h4>📧 Email</h4>
-              <p>email@example.com</p>
+              <h4 class="text-base md:text-lg">GitHub</h4>
+              <p class="text-sm md:text-base break-all">
+                <a href="https://github.com/knardd">github.com/knardd</a>
+              </p>
             </div>
             <div class="contact-item">
-              <h4>💼 LinkedIn</h4>
-              <p>linkedin.com/in/yourprofile</p>
-            </div>
-            <div class="contact-item">
-              <h4>🐙 GitHub</h4>
-              <p>github.com/yourusername</p>
+              <h4 class="text-base md:text-lg">Instagram</h4>
+              <p class="text-sm md:text-base break-all">
+                <a href="https://instagram.com/knardd__"
+                  >instagram.com/knardd</a
+                >
+              </p>
             </div>
           </div>
         </div>
@@ -238,12 +295,18 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2025 Shafwan Kennard Kumara</p>
+    <footer class="footer px-4">
+      <div class="container mx-auto">
+        <p class="text-sm md:text-base">&copy; 2025 Shafwan Kennard Kumara</p>
       </div>
     </footer>
 
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      // Public Key EmailJS
+      emailjs.init("qUx_1mjPbTh9NIERe");
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
